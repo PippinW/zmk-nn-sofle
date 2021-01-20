@@ -29,7 +29,7 @@
             bindings = <
 &kp ESC   &kp N1      &kp N2     &kp N3     &kp N4      &kp N5                       &kp N6    &kp N7      &kp N8      &kp N9     &kp N0         &kp MINUS
 &kp TAB   &kp Q       &kp W      &kp E      &kp R       &kp T                        &kp Y     &kp U       &kp I       &kp O      &kp P          &kp RET
-&mo 3     &hm LCTRL A &hm LALT S &hm LCMD D &hm LSHFT F &kp G                        &kp H     &hm RSHFT J &hm RCMD K  &hm RALT L &hm RCTRL SCLN &kp QUOT
+&mo 3     &hm LCTRL A &hm LALT S &hm LCMD D &hm LSHFT F &kp G                        &kp H     &hm RSHFT J &hm RCMD K  &hm RALT L &hm RCTRL SEMI &kp SQT
 &mo 4     &kp Z       &kp X      &kp C      &kp V       &kp B  &kp HOME    &kp END   &kp N     &kp M       &kp COMMA   &kp DOT    &kp FSLH       &mo 1
                       &mo 2      &kp LALT   &kp LCMD    &mo 1  &kp BSPC    &kp SPACE &mo 2     &kp RCMD    &mo 4       &mo 3 
             >;
@@ -46,11 +46,11 @@
 // |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&trans   &kp F1    &kp F2    &kp F3    &kp F4    &kp F5                    &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &kp F11
-&kp GRAV &kp N1    &kp N2    &kp N3    &kp N4    &kp N5                    &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp F12
-&trans   &kp BANG  &kp ATSN  &kp HASH  &kp CURU  &kp PRCT                  &kp CRRT  &kp AMPS  &kp KMLT  &kp LPRN  &kp RPRN  &kp PIPE
-&trans   &kp EQL   &kp MINUS &kp KPLS  &kp LCUR  &kp RCUR &trans   &trans  &kp LBKT  &kp RBKT  &kp SCLN  &kp COLN  &kp BSLH  &trans
-                   &trans    &trans    &trans    &trans   &kp RET  &kp DEL &trans    &trans    &trans    &trans
+&trans    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                     &kp F6    &kp F7    &kp F8          &kp F9     &kp F10   &kp F11
+&kp GRAVE &kp N1    &kp N2    &kp N3      &kp N4    &kp N5                     &kp N6    &kp N7    &kp N8          &kp N9     &kp N0    &kp F12
+&trans    &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT                  &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR   &kp RPAR  &kp PIPE
+&trans    &kp EQUAL &kp MINUS &kp KP_PLUS &kp LBRC  &kp RBRC  &trans   &trans  &kp LBKT  &kp RBKT  &kp SEMI        &kp COLON  &kp BSLH  &trans
+                      &trans    &trans    &trans    &trans   &kp RET   &kp DEL &trans    &trans    &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp PG_DN PG_UP>;
@@ -65,9 +65,9 @@
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                &trans    &trans    &trans    &trans    &trans    &trans
-&trans     &kp INS      &kp PRSC     &kp LCMD     &trans       &trans                      &kp PG_UP &trans    &kp UP    &trans    &kp N0    &trans
+&trans     &kp INS      &kp PSCRN    &kp LCMD     &trans       &trans                      &kp PG_UP &trans    &kp UP    &trans    &kp N0    &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                    &kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL   &kp BSPC
-&trans     &kp UNDO     &kp CUT      &kp COPY     &kp PSTE     &trans   &trans     &trans  &trans    &trans    &trans    &trans    &trans    &trans
+&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans   &trans     &trans  &trans    &trans    &trans    &trans    &trans    &trans
                         &trans       &trans       &trans       &trans   &kp HOME   &kp END &trans    &trans    &trans    &trans
             >;
 
