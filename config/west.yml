@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: PippinW
-      revision: WPM
+      revision: sofle
       import: app/west.yml
   self:
     path: config
